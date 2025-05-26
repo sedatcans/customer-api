@@ -9,7 +9,7 @@ import lombok.Data;
 public class CustomerRequest {
     private String name;
     private String surname;
-    @Email(message = "Please provide a valid email address")
+    @Email(message = "Please provide a valid email address.")
     private String email;
     private String phone;
     
