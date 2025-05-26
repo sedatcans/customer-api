@@ -14,7 +14,7 @@ public enum ErrorCode {
         this.errorMessage = errorMessage;
     }
 
-    private String errorMessage;
+    private final String errorMessage;
 
     public String getEnumValue() {
         return errorMessage;
