@@ -84,6 +84,7 @@
                         <recipe>org.openrewrite.java.OrderImports</recipe>
                         <recipe>org.openrewrite.staticanalysis.CommonStaticAnalysis</recipe>
                         <recipe>org.openrewrite.staticanalysis.CodeCleanup</recipe>
+                        <recipe>org.openrewrite.java.recipes.JavaRecipeBestPractices</recipe>
                     </activeRecipes>
                 </configuration>
                 <dependencies>
@@ -97,24 +98,12 @@
                         <artifactId>rewrite-static-analysis</artifactId>
                         <version>1.18.0</version>
                     </dependency>
+                    <dependency>
+                        <groupId>org.openrewrite.recipe</groupId>
+                        <artifactId>rewrite-rewrite</artifactId>
+                        <version>0.6.0</version>
+                    </dependency>
                 </dependencies>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.4.0</version>
-                <configuration>
-                    <configLocation>checkstyle.xml</configLocation>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>validate</id>
-                        <phase>validate</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

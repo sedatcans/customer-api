@@ -1,6 +1,6 @@
 package com.sonat.customerapi.util;
 
-public class MaskingUtils {
+public final class MaskingUtils {
     public static String mask(String input) {
         if (input == null || input.isEmpty()) {
             return "";
