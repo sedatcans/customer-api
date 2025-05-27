@@ -1,5 +1,7 @@
 package com.sonat.customerapi.service;
 
+import java.util.List;
+
 import com.sonat.customerapi.data.Customer;
 import com.sonat.customerapi.model.CustomerRequest;
 import com.sonat.customerapi.model.dto.CustomerDto;
@@ -7,8 +9,6 @@ import com.sonat.customerapi.repository.CustomerRepository;
 import com.sonat.customerapi.util.MaskingUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor
